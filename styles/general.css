@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;900&display=swap');
+
+:root {
+    --main-green: #2f6118;
+
+    --main-green-hl: #58a534;
+
+    --shadow: #c7c7c7;
+
+    --grotesk: 'Schibsted Grotesk', sans-serif;
+
+}
+
+*, *::before, ::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    line-height: 1;
+}
+
+a {
+    color: var(--main-green);
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #12200b;
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--grotesk);
+}
+
+main {
+    padding-top: 60px;
+    background-color: #f3f3f3;
+}
+
+main .container {
+    background-color: white;
+    box-shadow: 0 0 3px white;
+}
+
+main h1, main h2, main h3 {
+    color: #19360c;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+main .tempImg {
+    border: 1px solid #000;
+    display: block;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c726c;
+    color: white;
+    /* display: none; */
+}
+
+main .tempImg span {
+    font-size: 2rem;
+}
+
+main .container > section {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+}
+
+main .container > section > .about, .industries {
+    padding: 0 40px;
+}
+
+main .container > section > .about {
+    flex-basis: 60%;
+}
+
+main .container > section > .industries {
+    flex-basis: 40%;
+}
+
+main .industries-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    text-align: left;
+    margin: 20px 0;
+}
+
+main .industries-grid > .indus-box {
+    padding: 10px 15px;
+    /* border: 1px solid #000; */
+}
+
+main .about h2 {
+    margin-bottom: 20px;
+}
+
+.vr {
+    background-color: #3d473e;
+    width: 2px;
+    opacity: 0.1;
+}
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
