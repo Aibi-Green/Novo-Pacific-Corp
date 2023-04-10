@@ -1,10 +1,19 @@
-// window.onscroll = function() {scrollFunction()};
+const allDetails = document.querySelectorAll('.products-by-suppliers section details, .products-by-industries section details');
+const collapseBtn = document.querySelector('#collapse-all');
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-//     document.querySelector("header img").style.display = "none";
-//     document.querySelector("header img").style.transition = "none";
-//   } else {
-//     document.querySelector("header img").style.display = "block";
-//   }
-// }
+function openCloseAllDetails() {
+    if(collapseBtn.innerHTML === 'Collapse'){
+        Array.from(allDetails).forEach((child)=>{
+            child.open = true;
+        });
+        collapseBtn.innerHTML = 'Uncollapse';
+    } else {
+        Array.from(allDetails).forEach((child)=>{
+            child.open = false;
+        });
+        collapseBtn.innerHTML = 'Collapse';
+    }
+    
+}
+
+collapseBtn.addEventListener('click', openCloseAllDetails);

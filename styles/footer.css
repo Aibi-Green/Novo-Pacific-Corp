@@ -1,3 +1,5 @@
+@import url(./root.css);
+
 footer {
     background-color: #3d473e;
     box-shadow: -4px 0 3px var(--shadow);

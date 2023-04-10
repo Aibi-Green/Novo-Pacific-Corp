@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;900&display=swap');
+
+:root {
+    --main-green: #2f6118;
+
+    --main-green-hl: #58a534;
+
+    --fade-green: #3d473e21;
+
+    --pastel-green: #407a47;
+
+    --shadow: #c7c7c7;
+
+    --grotesk: 'Schibsted Grotesk', sans-serif;
+
+}

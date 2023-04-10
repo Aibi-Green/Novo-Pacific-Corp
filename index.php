@@ -1,5 +1,5 @@
 <?php
-include "./data/home-data.php";
+include "./data/footer.php";
 include "./data/industries.php";
 ?>
 
@@ -14,11 +14,12 @@ include "./data/industries.php";
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/home.css">
 
-    <title>Home - Novo Pacific Corporation</title>
+    <title>Home</title>
 </head>
 <body>
-    <?php include "./header.php"; ?>
+    <?php include "./components/header.php"; ?>
     <main>
         <div class="container">
             <div class="tempImg"><span>Temporary</span></div>
@@ -49,7 +50,6 @@ include "./data/industries.php";
             </section>
         </div>
     </main>
-    <?php include "./footer.php"; ?>
+    <?php include "./components/footer.php"; ?>
 </body>
-<script src="./script.js"></script>
 </html>

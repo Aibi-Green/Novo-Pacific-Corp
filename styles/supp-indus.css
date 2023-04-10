@@ -1,0 +1,52 @@
+@import url(./root.css);
+
+.page-title {
+    /* margin-bottom: 20px; */
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.products-by-suppliers > section h3,
+.products-by-industries > section h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.products-by-suppliers > section li {
+    list-style-type: none;
+}
+
+.products-by-industries > section li {
+    margin-left: 50px;
+}
+
+.products-by-suppliers > section > details > summary,
+.products-by-industries > section > details > summary {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    user-select: none;
+}
+
+.products-by-suppliers section .content,
+.products-by-industries section .content {
+    padding: 0 20px 20px 20px;
+}
+
+#collapse-all {
+    width: 100px;
+}
+
+.products-by-suppliers section h4,
+.products-by-industries section h4 {
+    text-transform: uppercase;
+}
+
+.products-by-suppliers section li,
+.products-by-industries section li {
+    margin-bottom: 5px;
+}
