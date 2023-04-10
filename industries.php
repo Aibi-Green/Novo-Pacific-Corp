@@ -24,7 +24,7 @@ include "./data/footer.php";
             <section class="products-by-industries add-padding">
                 <p class="navigation"><a href="index.php">Home</a> / Industries</p>
                 <div class="title-container">
-                    <h1 clss="page-title">Products by Industries</h1>
+                    <h1 class="page-title">Products by Industries</h1>
                     <button id="collapse-all">Collapse</button>
                 </div>
                 <?php include "./industries/all-industries.php" ?>
